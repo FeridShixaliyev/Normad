@@ -1,8 +1,240 @@
-﻿@{
+﻿@model List<Slider>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<main>
+    <section id="second">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h1>
+                        Let us create...
+                    </h1>
+                    <p>
+                        You may contribute a small amount via PayPal if Nomad Force Template is useful for you. This
+                        will absolutely help us to keep creating better CSS templates for you.
+                    </p>
+                    <p>
+                        We provide you 100% free templates on TemplateMo website. Images are provided by FreePik and
+                        Unsplash websites.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <p>
+                        This Bootstrap 5 layout is free to use for your business. You are allowed to edit it in any
+                        way you like. However, please do not redistribute this template ZIP file for a template
+                        download purpose on any other website such as Free CSS collections.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="third">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 third-left">
+                <div class="col-lg-6 third-img">
+                    <img class="w-100" src="~/assets/images/third-img.jpg" alt="">
+                </div>
+                <div class="col-lg-6 third-text">
+                    <h2>
+                        We are - idealists and strategic thinkers.
+                    </h2>
+                    <p>
+                        Over six years in the video business
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 third-right">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="@i"
+                                class="@(i==0?"active":"")" aria-current="true" aria-label="Slide @i"></button>
+                        }
+                    </div>
+                    <div class="carousel-inner">
+                        @foreach (var item in Model)
+                        {
+                            <div class="carousel-item @(item==Model[0]?"active":"")">
+                                <img src="~/assets/images/@item.Image" class="d-block w-100" style="height:100% !important" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 style="color:black">@item.PersonName</h5>
+                                    <p style="color:black">@item.Level</p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        Portfolio
+                    </h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="left-img">
+                        <img src="~/assets/images/fourth-1.jpeg" alt="">
+                    </div>
+                    <h2>
+                        Effortless
+                    </h2>
+                    <p>
+                        Branding
+                    </p>
+                    <div class="left-img">
+                        <img src="~/assets/images/fourth-2.jpeg" alt="">
+                    </div>
+                    <h2>
+                        Effortless
+                    </h2>
+                    <p>
+                        Branding
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-img">
+                        <img src="~/assets/images/fourth-3.jpeg" alt="">
+                    </div>
+                    <h2>Maki</h2>
+                    <p>Website</p>
+                    <div class="right-img">
+                        <img src="~/assets/images/fourth-4.jpeg" alt="">
+                    </div>
+                    <h2>
+                        The gig economy
+                    </h2>
+                    <p>Graphic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fifth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        News & Events
+                    </h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fifth-img-left">
+                        <img src="~/assets/images/fifth-1.jpg" alt="">
+                    </div>
+                    <div class="content" style="margin-top:40px ;">
+                        <a href=""
+                           style="color:gray;cursor:pointer;font-size:22px;font-weight:700;text-decoration: none;margin-top: 40px;">
+                            The
+                            rise of the gig economy spells the end for these workers the old system
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-up">
+                        <img src="~/assets/images/fifth-2.jpeg" alt="">
+                        <div class="content">
+                            <h3>Job Opportunities: Digital, Marketing</h3>
+                            <p> Alaska, August 6, 2021</p>
+                        </div>
+                    </div>
+                    <div class="right-down">
+                        <img src="~/assets/images/fifth-3.jpeg" alt="">
+                        <div class="content">
+                            <h3>Job Opportunities: Digital, Marketing</h3>
+                            <p> Alaska, August 6, 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sixth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        Dont' be shy, write to us
+                    </h1>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <label for="floatingTextarea" class="form-label">How can we help?</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Tell us about the project"
+                                      id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea"></label>
+                        </div>
+                        <label class="form-label" style="margin-top:20px ;">Servives</label>
+                        <div class="checkbox" style="display: flex;justify-content: space-between;">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Branding</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Digital Experiences</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Web Development</label>
+                            </div>
+                        </div>
+                        <div class="btn" style="display:flex;justify-content: center;">
+                            <button type="submit" class="btn btn-dark">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="mapouter" style="width:100%">
+            <div class="gmap_canvas" style="width:100%">
+                <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 400px;
+                        width: 1080px;
+                    }
+                </style><a href="https://www.embedgooglemap.net">google map link generator</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 400px;
+                        width: 100%;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,23 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <input asp-for="PersonName" class="form-control" placeholder="Person Name" style=" border: 1px solid red;">
+        <span asp-validation-for="PersonName"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="Level" class="form-control" placeholder="Level" style=" border: 1px solid red;">
+        <span asp-validation-for="Level"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="ImageFile" class="form-control" accept="image/*" placeholder="Person Name" style=" border: 1px solid red;">
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+    <div style="margin-top:30px">
+        <img src="~/assets/images/@Model.Image" style="margin:20px" />
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+</form>

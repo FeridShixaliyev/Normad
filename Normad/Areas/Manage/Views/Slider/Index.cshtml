@@ -1,0 +1,37 @@
+﻿@using Normad.Models
+@model List<Slider>
+@{
+    ViewData["Title"] = "Product";
+}
+
+<div class="create">
+    <a asp-controller="Slider" asp-action="Create" class="btn btn-success" style="width:100px;height:40px;margin:40px">
+        Create
+    </a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Level</th>
+            <th scope="col">Edit/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td><img src="~/assets/images/@item.Image" style="width:70px;height:60px;border-radius:6px;background-color:white" /></td>
+                <td>@item.PersonName</td>
+                <td>@item.Level</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success" style="margin-bottom:3px">edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

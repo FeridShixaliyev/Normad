@@ -1,0 +1,196 @@
+#first .title-img {
+  background-image: url(../images/wp3018787.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 560px !important;
+  text-align: center;
+  padding: 19%;
+}
+#first .title-img h1 {
+  color: white;
+  font-size: 73px;
+  margin: 0 auto;
+  font-family: monospace;
+  font-weight: 900;
+}
+
+header .navbar {
+  height: 77px;
+  width: 100%;
+  z-index: 999;
+}
+header .navbar .container-fluid .collapse .navbar-brand {
+  margin: 0;
+  font-size: 25px;
+  margin-left: 8%;
+  font-weight: 700;
+  color: #ffc107;
+}
+header .navbar .container-fluid .collapse ul {
+  margin: 0 auto;
+}
+header .navbar .container-fluid .collapse ul li {
+  margin-right: 40px;
+}
+header .navbar .container-fluid .collapse ul li a {
+  font-size: 21px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+header .navbar .container-fluid .collapse ul li a:hover {
+  color: black;
+}
+
+#second {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+#second .container .row .col-lg-6 h1 {
+  margin-bottom: 40px;
+  color: black;
+  font-size: 50px;
+  font-weight: 800;
+}
+#second .container .row .col-lg-6 p {
+  color: gray;
+  font-size: 20px;
+}
+
+#third {
+  margin-top: 80px;
+}
+#third .row .third-left {
+  display: flex;
+  padding: 0;
+}
+#third .row .third-left .third-text {
+  padding: 20px;
+  background-color: #212529 !important;
+  text-align: center;
+}
+#third .row .third-left .third-text h2 {
+  margin-top: 30px;
+  color: white;
+}
+#third .row .third-left .third-text p {
+  margin: 20px;
+  color: white;
+  font-size: 21px;
+}
+#third .row .third-right {
+  padding: 0;
+}
+
+#fourth {
+  margin-top: 80px;
+}
+#fourth .container .row .col-lg-12 {
+  text-align: center;
+}
+#fourth .container .row .col-lg-12 h1 {
+  font-weight: 700;
+}
+#fourth .container .row .col-lg-6 {
+  margin-top: 40px;
+}
+#fourth .container .row .col-lg-6 .left-img {
+  margin: 10px;
+}
+#fourth .container .row .col-lg-6 .left-img img {
+  width: 100%;
+  transition: 0.3s;
+}
+#fourth .container .row .col-lg-6 .left-img img:hover {
+  transform: scale(1.02);
+}
+#fourth .container .row .col-lg-6 h2 {
+  margin: 18px;
+  font-weight: 700;
+}
+#fourth .container .row .col-lg-6 p {
+  font-size: 20px;
+  color: red;
+  margin-left: 18px;
+  margin-bottom: 60px;
+}
+#fourth .container .row .col-lg-6 .right-img {
+  margin: 10px;
+}
+#fourth .container .row .col-lg-6 .right-img img {
+  width: 100%;
+  transition: 0.3s;
+}
+#fourth .container .row .col-lg-6 .right-img img:hover {
+  transform: scale(1.02);
+}
+
+#fifth {
+  background-color: #f9f9f9;
+  margin-top: 80px;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+#fifth .container .row .col-lg-12 {
+  text-align: center;
+}
+#fifth .container .row .col-lg-12 h1 {
+  font-weight: 700;
+}
+#fifth .container .row .col-lg-6 {
+  margin-top: 40px;
+}
+#fifth .container .row .col-lg-6 .fifth-img-left {
+  margin: 10px;
+}
+#fifth .container .row .col-lg-6 .fifth-img-left img {
+  width: 100%;
+  transition: 0.3s;
+}
+#fifth .container .row .col-lg-6 .fifth-img-left img:hover {
+  transform: scale(1.02);
+}
+#fifth .container .row .col-lg-6 .right-up {
+  display: flex;
+  margin: 5px;
+  margin-bottom: 40px;
+}
+#fifth .container .row .col-lg-6 .right-up img {
+  width: 50%;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+#fifth .container .row .col-lg-6 .right-up img:hover {
+  transform: scale(1.02);
+}
+#fifth .container .row .col-lg-6 .right-up p {
+  margin-top: 10px;
+  color: gray;
+}
+#fifth .container .row .col-lg-6 .right-down {
+  display: flex;
+  margin: 5px;
+}
+#fifth .container .row .col-lg-6 .right-down img {
+  width: 50%;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+#fifth .container .row .col-lg-6 .right-down img:hover {
+  transform: scale(1.02);
+}
+#fifth .container .row .col-lg-6 .right-down p {
+  margin-top: 10px;
+  color: gray;
+}
+
+#sixth {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+#sixth .container .row .col-lg-12 {
+  text-align: center;
+}
+#sixth .container .row .col-lg-12 h1 {
+  color: black;
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */
